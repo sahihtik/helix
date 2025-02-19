@@ -3,12 +3,9 @@ export default function decorate($block) {
   $block.append($ul);
 
   const trail = [
-    { text: 'Home', link: '/' }, // Always start with Home
-    // Add more breadcrumb segments as needed.  Ideally get this from metadata
-    // or page hierarchy. Example:
-    // { text: 'Products', link: '/products' },
-    // { text: 'Electronics', link: '/products/electronics' },
-    { text: document.title } // Last item is usually the current page title
+    { text: 'Home', link: '/' }, 
+    { text: 'Aldevron' , link: '/' },
+    { text: document.title } 
   ];
 
   trail.forEach(step => {
