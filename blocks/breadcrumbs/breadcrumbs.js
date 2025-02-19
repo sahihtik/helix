@@ -14,5 +14,9 @@ export default function decorate($block) {
     const $li = document.createElement('li');
     $ul.append($li);
 
+    if (step.link) {
+        $content.href = step.link;
+    }
+    $li.append($content);
   });
 }
