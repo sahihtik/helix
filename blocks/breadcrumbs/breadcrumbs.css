@@ -1,0 +1,29 @@
+.breadcrumb-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumb-item {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Additional styling for better appearance */
+  .breadcrumb-separator {
+    margin: 0 0.5rem;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  .breadcrumb-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-item span:not(.breadcrumb-separator) {
+    color: #666;
+  }
