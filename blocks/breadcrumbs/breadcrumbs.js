@@ -9,7 +9,7 @@ export default function decorate($block) {
   const trail = [
     { text: 'Home', link: '/' },
     { text: 'Aldevron', link: '/' },
-    { text: pageTitle }
+    
   ];
   
   trail.forEach((step, index) => {
