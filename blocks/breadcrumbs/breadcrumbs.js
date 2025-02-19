@@ -4,9 +4,7 @@ export default function decorate($block) {
 
   const trail = [
     { text: 'Home', link: '/' }, 
-    { text: 'Aldevron' , link: '/' },
-    { text: 'Aldevron' , link: '/' },
-    { text: 'Aldevron' , link: '/' },
+    { text: 'Aldevron' , link: '/'},
     { text: document.title } 
   ];
 
@@ -14,6 +12,8 @@ export default function decorate($block) {
     const $li = document.createElement('li');
     $ul.append($li);
 
+    const $content = step.link ? document.createElement('a') : document.createElement('span');
+    $content.textContent = step.text;
     if (step.link) {
         $content.href = step.link;
     }
