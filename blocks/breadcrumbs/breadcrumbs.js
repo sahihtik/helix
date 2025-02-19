@@ -3,8 +3,7 @@ export default function decorate($block) {
   $ul.classList.add('breadcrumb-list');
   $block.append($ul);
   
-  // Make sure you're setting the correct title here
-  const pageTitle = "Plasmid Products"; // Replace with dynamic title if needed
+  const pageTitle = "Plasmid Products"; 
   
   const trail = [
     { text: 'Home', link: '/' },
@@ -23,7 +22,6 @@ export default function decorate($block) {
     
     $li.append($content);
     
-    // Add separator after all items except the last
     if (index < trail.length - 1) {
       const $separator = document.createElement('span');
       $separator.classList.add('breadcrumb-separator');
