@@ -6,6 +6,7 @@ import { getMetadata } from '../../scripts/lib-franklin.js';
  * @param {HTMLElement} $block The main element
  */
 export default function decorate($block) {
+  console.log("Breadcrumb is calling");
   const title = getMetadata('og:title');
   const $ul = document.createElement('ul');
   $block.append($ul);
