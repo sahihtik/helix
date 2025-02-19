@@ -14,9 +14,7 @@ export default function decorate($block) {
 
     const $content = step.link ? document.createElement('a') : document.createElement('span');
     $content.textContent = step.text;
-    if (step.link) {
-        $content.href = step.link;
-    }
+    
     $li.append($content);
   });
 }
