@@ -1,7 +1,10 @@
 export default function decorate(block) {
-    const row = [...block.childern];
-    [...block.childern].forEach(row => {
+    [...block.childern].forEach((row)=>{
+        row.classList.add("list");
         
-    });
+    })
+    
+        
+
 
 }
