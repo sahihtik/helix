@@ -1,7 +1,7 @@
 export default function decorate(block) {
-    [...block.childern].forEach((row)=>{
+    [...block.children].forEach((row)=>{
         row.classList.add("list");
-        
+
     })
     
         
