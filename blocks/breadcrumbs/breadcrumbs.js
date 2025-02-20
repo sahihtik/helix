@@ -7,7 +7,7 @@ export default function decorate($block) {
   
   const trail = [
     { text: 'Home', link: '/ ' },
-    { text: 'Aldevron', link: '/' },
+    { text: 'Aldevron', link: 'https://www.aldevron.com/about-us/events/conference-dcat-week-2025' },
     
   ];
   
