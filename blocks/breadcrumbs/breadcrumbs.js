@@ -6,7 +6,7 @@ export default function decorate($block) {
   const pageTitle = "Plasmid Products"; 
   
   const trail = [
-    { text: 'Home', link: '/' },
+    { text: 'Home', link: '/ ' },
     { text: 'Aldevron', link: '/' },
     
   ];
@@ -18,7 +18,9 @@ export default function decorate($block) {
     
     const $content = step.link ? document.createElement('a') : document.createElement('span');
     $content.textContent = step.text;
-    
+    if (step.link) {     
+      $content.href = step.link;  
+     }
     
     $li.append($content);
     
@@ -30,7 +32,5 @@ export default function decorate($block) {
     }
   });
   
-  if (step.link) {     
-    $content.href = step.link;   }
  
 }
