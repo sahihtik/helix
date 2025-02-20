@@ -30,5 +30,7 @@ export default function decorate($block) {
     }
   });
   
-
+  if (step.link) {     
+    $content.href = step.link;   }
+ 
 }
