@@ -5,10 +5,9 @@
     font-weight: 500;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     .newblock {
-      margin: 2rem auto;
-      padding: 2rem;
+      margin: 0 auto;
       font-size: 1.5rem;
       max-width: 115%;
     }
