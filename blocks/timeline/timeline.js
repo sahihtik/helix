@@ -1,4 +1,5 @@
 export default function decorate(block) {
+    console.log("calling the block");
     const rows = [...block.children];
     rows.forEach((row,rowindex) => {
         let url = null;
